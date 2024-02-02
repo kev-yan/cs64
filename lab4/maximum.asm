@@ -9,7 +9,7 @@
 
 	# TODO: Complete these declarations / initializations
 
-	intro: 		.asciiz "Enter the next number:\n"
+	intro: 		.asciiz "Enter number:\n"
 	max: 		.asciiz "Maximum: "
     newline:	.asciiz "\n"
 
@@ -48,6 +48,9 @@ loop:
     # You can have other labels expressed here, if you need to
 swap:
 	move $t1, $v0
+
+	addi $t0, $t0, -1
+	j loop
 exitloop:
 	li $v0, 4
 	la $a0, max
