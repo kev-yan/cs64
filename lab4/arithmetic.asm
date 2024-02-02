@@ -10,7 +10,6 @@ main:
 	# TODO: Write your code here
 	li $v0, 5
 	syscall
-	# addi $t0, $v0, 0
 	move $t0, $v0
 
 	li $v0, 5
