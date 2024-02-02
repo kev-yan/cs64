@@ -66,4 +66,4 @@ exitloop:
 
 	li $v0, 10
 	syscall
-	# TODO: Write code to properly exit a SPIM simulation
+
