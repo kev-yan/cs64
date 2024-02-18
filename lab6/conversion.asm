@@ -40,7 +40,7 @@ function2:
     j loop
 
 exitLoop:
-    j exit
+    jr $ra
 
 exit:
     li $v0, 10
