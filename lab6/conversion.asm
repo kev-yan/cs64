@@ -14,8 +14,8 @@ conv:
     j loop
 
 main:  # DO NOT MODIFY THE MAIN SECTION
-    li $a0, 10
-    li $a1, 9
+    li $a0, 5
+    li $a1, 7
 
     jal conv
 
