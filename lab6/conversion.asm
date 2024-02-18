@@ -36,7 +36,7 @@ function:
     j function2
 function2:
     addi $a0, $a0, 1 # x++
-    addi $s0, $s0, 1 #i++
+    addi $s0, $s0, 1 # i++
     j loop
 
 exitLoop:
