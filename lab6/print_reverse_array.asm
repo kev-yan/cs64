@@ -13,7 +13,7 @@
 .text
 printA:
     # TODO: Write your function code here
-	beq $a1, $zero, goBack
+	beq $a1, $zero, exit
 	addi $a1, $a1, -1 	# i = al-1
 	sll $t0, $a1, 2 	# t0 = i*4
 	add $t1, $a0, $t0 	# index = base address + i*4 = base address + indices
