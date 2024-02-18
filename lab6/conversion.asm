@@ -23,7 +23,6 @@ main:  # DO NOT MODIFY THE MAIN SECTION
     move $a0, $v0
     li $v0, 1
     syscall
-    j exit
 
 loop:
     beq $s0, $s1, exitLoop  # if i==8, exit
