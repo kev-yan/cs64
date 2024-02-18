@@ -8,15 +8,14 @@
 .text
 conv:
     # TODO: Write your function code here
-
     li $s0, 0 # i
     li $s1, 8 # end condition
     li $v0, 0 # z
     j loop
 
 main:  # DO NOT MODIFY THE MAIN SECTION
-    li $a0, 5
-    li $a1, 7
+    li $a0, 10
+    li $a1, 9
 
     jal conv
 
@@ -41,7 +40,7 @@ function2:
     j loop
 
 exitLoop:
-    jr $ra
+    j exit
 
 exit:
     li $v0, 10
