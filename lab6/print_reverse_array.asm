@@ -43,8 +43,6 @@ main:  # DO NOT MODIFY THE MAIN SECTION
 
 	jal printA
 
-goBack:
-	jr $ra
 exit:
 	li $v0, 10
 	syscall
