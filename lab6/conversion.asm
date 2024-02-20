@@ -8,8 +8,8 @@
 .text
 conv:
     # TODO: Write your function code here
-    li $s0, 0 # i
-    li $s1, 8 # end condition
+    li $t0, 0 # i
+    li $t1, 8 # end condition
     li $v0, 0 # z
     j loop
 
@@ -28,9 +28,9 @@ exit:
     syscall
 	# TODO: Write code to properly exit a SPIM simulation
 loop:
-    beq $s0, $s1, exitLoop  # if i==8, exit
-    sll $t0, $a0, 3
-    sub $v0, $v0, $t0   # z = z-8x
+    beq $t0, $t1, exitLoop  # if i==8, exit
+    sll $t2, $a0, 3
+    sub $v0, $v0, $t2   # z = z-8x
     add $v0, $v0, $a1   # z = z+y
     bge $a0, 2, function
     j function2
@@ -40,7 +40,7 @@ function:
     j function2
 function2:
     addi $a0, $a0, 1 # x++
-    addi $s0, $s0, 1 # i++
+    addi $t0, $t0, 1 # i++
     j loop
 
 exitLoop:
