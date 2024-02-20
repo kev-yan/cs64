@@ -10,7 +10,9 @@ conv:
     # TODO: Write your function code here
     li $t0, 0 # i
     li $t1, 8 # end condition
-    li $v0, 0 # z
+    addiu $sp, $sp, -4
+    sw $ra, 0($sp)
+    # li $v0, 0 # z
     j loop
 
 main:  # DO NOT MODIFY THE MAIN SECTION
@@ -44,5 +46,7 @@ function2:
     j loop
 
 exitLoop:
+    lw $ra, 0($sp)
+    addiu $sp, $sp, 4
     jr $ra
 
