@@ -23,6 +23,10 @@ main:  # DO NOT MODIFY THE MAIN SECTION
     li $v0, 1
     syscall
 
+exit:
+    li $v0, 10
+    syscall
+	# TODO: Write code to properly exit a SPIM simulation
 loop:
     beq $s0, $s1, exitLoop  # if i==8, exit
     sll $t0, $a0, 3
@@ -42,7 +46,3 @@ function2:
 exitLoop:
     jr $ra
 
-exit:
-    li $v0, 10
-    syscall
-	# TODO: Write code to properly exit a SPIM simulation
