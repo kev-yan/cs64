@@ -44,6 +44,7 @@ function2:
     addi $a0, $a0, 1 # x++
     addi $t0, $t0, 1 # i++
     j loop
+    
 
 exitLoop:
     lw $ra, 0($sp)
