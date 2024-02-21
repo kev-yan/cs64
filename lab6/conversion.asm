@@ -12,7 +12,7 @@ conv:
     li $t1, 8 # end condition
     addiu $sp, $sp, -4
     sw $ra, 0($sp)
-    # li $v0, 0 # z
+    li $v0, 0 # z
     j loop
 
 main:  # DO NOT MODIFY THE MAIN SECTION
@@ -44,7 +44,6 @@ function2:
     addi $a0, $a0, 1 # x++
     addi $t0, $t0, 1 # i++
     j loop
-    
 
 exitLoop:
     lw $ra, 0($sp)
